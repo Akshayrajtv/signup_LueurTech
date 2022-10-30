@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="container">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="signin()">Sign in</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign up</button>
+
+            </div>
+            <div class="google_icon">
+                <img src="google.png" alt="">
+            </div>
+            <form id="signin" class="input-gp">
+                <input type="text" class="user" placeholder="Username" required>
+                <input type="text" class="pass" placeholder="Enter password" required>
+                <input type="checkbox" class="check-box"><span>Remember password</span>
+                <button type="submit" class="submit-btn">Sign in</button>
+
+            </form>
+
+            <form name="form1" id="signup" class="input-gp">
+                <input type="text" class="user" placeholder="Username" required>
+                <input type="email" class="user" placeholder="Email id" required>
+                <input type="text" class="pass" name="pwd" placeholder="Enter password"  id="pwd" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn" onclick="stringlength(document.form1.pwd,6)">Sign up</button>
+
+            </form>
+
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
